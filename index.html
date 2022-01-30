@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+
+<body>
+    <main>
+        <div class="background">
+            <div class="photo"></div>
+
+            <div class="div-button">
+                <button onclick="onClick()" class="submit-button btn btn-success text-center">
+                    Click <i class="far fa-paper-plane"></i> and you'll get the info
+                </button>
+            </div>
+
+            <div onclick="onClickOk()" class="backdrop"></div>
+            <div class="modal-my animate__animated animate__backOutUp shadow border">
+                <div class="modal-title text-center"></div>
+                <div class="modal-body text-center"></div>
+                <div class="modal-button text-center">
+                    <button onclick="onClickOk()" class="ok-button btn btn-info text-center">
+                        <i class="fas fa-check-double"></i>
+                        OK</button>
+                </div>
+            </div>
+
+            <div class="copyright"></div>
+
+        </div>
+    </main>
+</body>
+
+</html>
